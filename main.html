@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>مواقيت الصلاة</title>
+    </head>
+    <style>
+        body{
+            direction: rtl;
+            background-color:tan ;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: aliceblue;
+        }
+        #prayers_times{
+             display: flex;
+             justify-content: space-around;
+        }
+        #container{
+            margin: 50px;
+            padding: 20px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        #date{
+            font-size: 25px;
+            margin-bottom: 25px;
+            
+        }
+        #prayer_box{
+            background-color: white;
+            color: black;
+            width: 150px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 24px;
+            border-radius: 20px;
+        }
+        #prayer_name{
+            background-color: tan;
+            border-radius: 20px;
+            padding: 5px;
+        }
+        #prayer_time{
+            margin-top: 10px;
+
+        }
+        #city_box{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        #cities{
+            width: 200px;
+            height: 40px;
+            font-size: 24px;
+            border-radius: 15px;
+            background: none;
+        }
+        #cities option{
+            background: tan;
+        }
+
+    </style>
+    <body>
+        <div id="container">
+            <h1 id="main-title">الأسكندرية</h1>
+            <div id="date">الثلاثاء 15 أبريل 2025</div>
+            <hr>
+            <div id="prayers_times">
+                <div id="prayer_box">
+                    <div id="prayer_name">الفجر</div>
+                    <div id="prayer_time">5:00</div>
+                </div>
+
+                <div id="prayer_box">
+                    <div id="prayer_name">الشروق</div>
+                    <div id="prayer_time">5:00</div>
+                </div>
+                <div id="prayer_box">
+                    <div id="prayer_name">الظهر</div>
+                    <div id="prayer_time">5:00</div>
+                </div>
+                   
+                <div id="prayer_box">
+                    <div id="prayer_name">العصر</div>
+                    <div id="prayer_time">5:00</div>
+                </div>
+                   
+                <div id="prayer_box">
+                    <div id="prayer_name">المغرب</div>
+                    <div id="prayer_time">5:00</div>
+                </div>
+                <div id="prayer_box">
+                    <div id="prayer_name">العشاء</div>
+                    <div id="prayer_time">5:00</div>
+                </div>
+
+            </div>
+            <div id="city_box">
+                <select id="cities">
+                    <option>الأسكندرية</option>
+                    <option>القاهرة</option>
+                    <option>الجيزة</option>
+                    <option>الرياض</option>
+
+                </select>
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
